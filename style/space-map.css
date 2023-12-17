@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font:
+        13px/16px "Open Sans",
+        sans-serif,
+        "Arimo",
+        sans-serif;
+}
+::selection {
+    background-color: grey;
+    color: white;
+}
+
+.index-bg-video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-header {
+    margin-top: 10px;
+    font-size: 32px;
+    color: rgb(89, 89, 89);
+}
+
+.main-content {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-planets {
+    display: flex;
+}
+
+.main-planets-1 {
+    width: 33%;
+    color: rgb(163, 163, 163);
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.main-planets-1 video {
+    width: 100%;
+    border-radius: 10px;
+}
+.main-planets-2 {
+    width: 33%;
+    color: rgb(163, 163, 163);
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin: 0 25px;
+}
+.main-planets-2 video {
+    width: 100%;
+    border-radius: 10px;
+}
+.main-planets-3 {
+    width: 33%;
+    color: rgb(163, 163, 163);
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.main-planets-3 video {
+    width: 100%;
+    border-radius: 10px;
+}
+.upp {
+    text-transform: uppercase;
+    text-decoration: unset;
+    color: rgb(18, 30, 102);
+}
+.main-map {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.planet-map {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+#saturn-map,
+#earth-map,
+#jupiter-map {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+    display: none;
+}
+
+.planet-link {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.planet-link:hover {
+    color: #ffa500; /* цвет при наведении, можно заменить на свой выбор */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/space-map.css">
+    <link rel="icon" href="/image/space-Logo.png">
+    <title>space</title>
+</head>
+
+<body>
+    <div class="index-bg-video">
+        <div class="video-bg">
+            <video loop autoplay muted>
+                <source src="/video/space.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <main class="main-content">
+        <div class="main-header">
+            <h1>PLANETS</h1>
+        </div>
+        <div class="main-planets">
+            <div class="main-planets-1">
+                <video autoplay muted loop src="/video/saturn-rotate.mp4"></video>
+                <p><a href="#" class="upp planet-link" data-planet="saturn"><strong>Saturn</strong></a> is the sixth
+                    planet from the
+                    Sun and the
+                    second-largest in the
+                    Solar System,
+                    after Jupiter. It
+                    is a gas giant with an average radius of about nine-and-a-half times that of Earth.</p>
+            </div>
+            <div class="main-planets-2">
+                <video autoplay muted loop src="/video/earth-rotate.mp4"></video>
+                <p> <a href="#" class="upp planet-link" data-planet="earth"><strong>Earth</strong></a> is the third
+                    planet from the
+                    Sun and the only
+                    astronomical object
+                    known to
+                    harbor life. This is
+                    enabled by Earth being a water world, the only one in the Solar System sustaining liquid surface
+                    water.</p>
+            </div>
+            <div class="main-planets-3">
+                <video autoplay muted loop src="/video/jupiter-rotate.mp4"></video>
+                <p> <a href="#" class="upp planet-link" data-planet="jupiter"><strong>Jupiter</strong></a> is the fifth
+                    planet from
+                    the Sun and the
+                    largest in the Solar
+                    System. It is
+                    a gas giant with
+                    a mass more than two and a half times that of all the other planets in the Solar System combined.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="main-map">
+            <div class="saturn-map planet-map" id="saturn-map" data-coordinates="43,43">
+                <div id="saturn"></div>
+            </div>
+            <div class="earth-map planet-map" id="earth-map" data-coordinates="44,44">
+                <div id="earth"></div>
+            </div>
+            <div class="jupiter-map planet-map" id="jupiter-map" data-coordinates="45,45">
+                <div id="jupiter"></div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="/javaScript/space-map.js"></script>
+</body>
+
+</html>

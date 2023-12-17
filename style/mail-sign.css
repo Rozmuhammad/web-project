@@ -1,0 +1,531 @@
+body {
+    font:
+        13px/16px "Open Sans",
+        sans-serif,
+        "Arimo",
+        sans-serif;
+    margin: 0;
+    background-color: #23272a;
+}
+::selection {
+    background-color: grey;
+    color: white;
+}
+
+.index-bg-video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/menutexture.png);
+    background-position: center top;
+    background-size: 100% 175px;
+    background-repeat: repeat-x;
+}
+
+.header-inner {
+    max-width: 1060px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header-inner .logo {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin-top: 5px;
+    background-color: #31363a;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .header-inner .logo {
+        margin-left: 90px;
+    }
+}
+
+.header-inner .logo img {
+    padding: 13px 13px 9px 13px;
+}
+
+.container {
+    position: relative;
+}
+.container-change {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15px 340px;
+}
+.ordinary-mail {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    padding: 8px 50px 8px 50px;
+    background-color: rgba(94, 94, 94, 0.4);
+    color: white;
+    border-radius: 10px;
+    border: unset;
+    transition: 0.4s;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.kids-mail {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 8px 50px 8px 50px;
+    /*  
+    background-color: rgba(0,95,249,.1);
+    color: #005ff9;
+    */
+    border-radius: 10px;
+    border: unset;
+    background-color: white;
+    color: rgb(94, 94, 94);
+    transition: 0.4s;
+    cursor: pointer;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+}
+.anketa {
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .header-inner .logo {
+        margin-left: 70px;
+    }
+    .anketa {
+        display: none;
+    }
+    .container .regular-inner {
+        margin-left: 25px;
+    }
+    .container .container-change {
+        margin: 0 0 15px 0;
+    }
+}
+.anketa-inner {
+    width: 344px;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .anketa-inner {
+        width: 265px;
+        height: 130px;
+    }
+    .anketa-main p {
+        margin: 10px;
+        padding: 0 0 20px 0;
+    }
+    .anketa .anketa-inner button {
+        margin-left: 0px;
+    }
+    .anketa .anketa-button {
+        width: 230px;
+    }
+    .anketa .anketa-vk {
+        margin-left: 80px;
+        padding-top: 12px;
+    }
+}
+.anketa-main {
+    padding: 10px;
+}
+.anketa-main p {
+    padding: 0 20px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: #aeaeae;
+    font-size: 16px;
+}
+.anketa-button {
+    display: flex;
+    width: 280px;
+    height: 40px;
+}
+.anketa-inner button {
+    text-align: center;
+    background-color: #5e5e5e;
+    padding-left: 10px;
+    margin-left: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: unset;
+    transition: 0.6s;
+}
+.anketa-inner button:hover {
+    background-color: #7c7c7c;
+}
+.anketa-img {
+    width: 25px;
+    height: 25px;
+}
+.anketa-img img {
+    width: 25px;
+    height: 25px;
+    padding: 7px 0 0 20px;
+}
+.anketa-vk {
+    color: white;
+    margin-left: 100px;
+    padding-top: 10px;
+}
+
+.regular-inner {
+    width: 420px;
+    height: 665px;
+    border: rgb(226, 224, 224) 1px solid;
+    border-radius: 15px;
+    margin-right: 25px;
+    margin-left: 20px;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.regular-inner-pad {
+    padding: 10px 30px 0px 30px;
+}
+
+.regular-inner-pad h1 {
+    margin-bottom: 20px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+
+.regular-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.regular-fname {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+.regular-lname {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+.fname {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+    padding: 11px;
+    border-radius: 5px;
+    margin-top: 3px;
+    border: 0.5px rgb(215, 215, 215) solid;
+    background-color: rgba(0, 0, 0, 0);
+}
+.lname {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+    padding: 11px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 0.5px rgb(215, 215, 215) solid;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.birth {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+.regular-birth-main {
+    display: flex;
+    margin-top: 3px;
+}
+.regular-birth {
+    margin: 15px 0 15px 0;
+}
+
+.regular-birth-day {
+    width: 20%;
+}
+
+.option-main {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.main-day,
+.main-month,
+.main-year {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    background: unset;
+    box-shadow: none;
+    color: rgb(158, 158, 158);
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    padding-left: 5px;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><polyline points='1 1 5 5 9 1' stroke='rgb(94, 94, 94)' fill='rgb(94, 94, 94)'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+    background-size: 15px;
+    border-radius: 5px 5px 0 0;
+    transition: background 0.3s;
+}
+.main-day:focus,
+.main-month:focus,
+.main-year:focus {
+    outline: none;
+    border-color: rgb(255, 202, 202);
+    box-shadow: 0 0 0 2px rgba(rgb(255, 202, 202), 0.2);
+}
+
+.main-day:focus,
+.main-month:focus,
+.main-year:focus {
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' style='transform: rotate(180deg)'><polyline points='1 1 5 5 9 1' stroke='rgb(94, 94, 94)' fill='rgb(94, 94, 94)'></polyline></svg>");
+}
+
+.regular-birth-month {
+    position: relative;
+    width: 50%;
+    margin: 0 5px 0 5px;
+}
+
+.regular-birth-year {
+    position: relative;
+    width: 30%;
+}
+
+.gen {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+.regular-gender-main {
+    display: flex;
+}
+.regular-gender-gen-man {
+    display: flex;
+    align-items: center;
+}
+#man {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+.regular-gender-gen-girl {
+    display: flex;
+    align-items: center;
+}
+#girl {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+
+.regular-mail {
+    margin: 15px 0 15px 0;
+}
+.mailbox-name {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+
+.regular-mail-main {
+    display: flex;
+    margin-top: 3px;
+}
+.regular-mail-text {
+    width: 70%;
+    margin-right: 12px;
+}
+.regular-mail-email {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+.regular-mail-text-email {
+    height: 32px;
+    border-radius: 0 0 0 5px;
+    width: 100%;
+    border: 0.5px rgb(215, 215, 215) solid;
+    padding: 1px 4px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+    background-color: rgba(0, 0, 0, 0);
+}
+.main-email-domain {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+    background-color: rgba(0, 0, 0, 0);
+    height: 36px;
+    width: 100%;
+    border: 1px #ff5d5d solid;
+    border-radius: 0 6px 0 0;
+    box-shadow: none;
+    cursor: pointer;
+    padding-left: 5px;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><polyline points='1 1 5 5 9 1' stroke='rgb(94, 94, 94)' fill='rgb(94, 94, 94)'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+    background-size: 15px;
+    border-radius: 0 5px 0 0;
+    transition: background 0.3s;
+}
+.main-email-domain:focus {
+    outline: none;
+    border-color: rgb(255, 202, 202);
+    box-shadow: 0 0 0 2px rgba(rgb(255, 202, 202), 0.2);
+}
+.main-email-domain:focus {
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' style='transform: rotate(180deg)'><polyline points='1 1 5 5 9 1' stroke='rgb(94, 94, 94)' fill='rgb(94, 94, 94)'></polyline></svg>");
+}
+
+.main-password {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+
+.regular-password-generate {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.regular-password-generate-input {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    border: 0.5px rgb(215, 215, 215) solid;
+    border-radius: 5px 0 5px 0;
+    height: 32px;
+    padding: 0 0 0 2px;
+    margin: 0;
+}
+
+.character-counter {
+    font-size: 18px;
+    margin-left: 5px;
+    color: rgb(94, 94, 94);
+    border: 0.5px rgb(215, 215, 215) solid;
+    border-radius: 0 0 0 5px;
+    padding: 8px;
+}
+
+.regular-password-generate-chek {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.regular-password-generate-input-chek {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    border-radius: 5px 0 5px 0;
+    height: 32px;
+    border: 0.5px rgb(215, 215, 215) solid;
+    padding: 0 0 0 2px;
+    margin: 0;
+}
+.regular-password-chek {
+    margin-top: 10px;
+}
+
+.main-rezerv {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+}
+.regular-rezerv {
+    margin: 15px 0 15px 0;
+}
+.regular-rezerv-generate-input {
+    width: 100%;
+    border-radius: 0 5px 0 5px;
+    height: 32px;
+    border: 0.5px rgb(215, 215, 215) solid;
+    color: rgb(158, 158, 158);
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 3px;
+    padding: 0 0 0 2px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+}
+
+.regular-end-button {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px 0 5px 0;
+    background-color: #5e5e5e;
+    color: white;
+    border: unset;
+    margin-top: 5px;
+}
+.regular-end-text {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+}
+.reg-href {
+    text-decoration: unset;
+    color: rgb(143, 107, 107);
+}

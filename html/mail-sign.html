@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/mail-sign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Lora:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="https://img.imgsmail.ru/static.promo/logo/logo.svg">
+    <title>Sign-up</title>
+</head>
+
+
+<body>
+    <div class="main">
+        <div class="index-bg-video">
+            <div class="video-bg">
+                <video loop autoplay muted>
+                    <source src="/video/space.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="#" class="mail"><img src="https://img.imgsmail.ru/static.promo/logo/logo.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-change">
+                <div class="regular-main">
+                    <button class="ordinary-mail">Обычная почта</button>
+                </div>
+                <div class="regular-kids-inner">
+                    <button class="kids-mail">Детская почта</button>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="anketa">
+                    <div class="anketa-inner">
+                        <div class="anketa-main">
+                            <p>Чтобы не заполнять анкету, создайте почтовый ящик через:</p>
+                            <button>
+                                <div class="anketa-button">
+                                    <div class="anketa-img">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/1024px-VK_Compact_Logo_%282021-present%29.svg.png"
+                                            alt="">
+                                    </div>
+                                    <span class="anketa-vk">VK ID</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <form id="registrationForm" class="regular" action="/php/process_registration.php" method="post">
+                    <div class="regular">
+                        <div class="regular-inner">
+                            <div class="regular-inner-pad">
+                                <h1>Creating a mailbox</h1>
+                                <div class="regular-name">
+                                    <div class="regular-fname-div">
+                                        <label for="fname" class="regular-fname">Имя</label>
+                                        <div>
+                                            <input type="text" class="fname" name="firstName"
+                                                placeholder="Name"></input>
+                                        </div>
+                                    </div>
+                                    <div class="regular-lname-div">
+                                        <label for="lname" class="regular-lname">Фамилия</label>
+                                        <div>
+                                            <input type="text" class="lname" name="lastName" id="textInput-l"
+                                                placeholder="Surname"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-birth">
+                                    <label class="birth" for="birth">Дата рождения</label>
+                                    <div class="regular-birth-main">
+                                        <div class="regular-birth-day">
+                                            <div name="dayDropdown" id="dayDropdown"></div>
+                                        </div>
+                                        <div class="regular-birth-month">
+                                            <div name="monthDropdown" id="monthDropdown"></div>
+                                        </div>
+                                        <div class="regular-birth-year">
+                                            <div name="yearDropdown" id="yearDropdown"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="selectedDate" id="selectedDate">
+                                <div class="regular-gender">
+                                    <label class="gen" for="gender">Пол</label>
+                                    <div class="regular-gender-main">
+                                        <div class="regular-gender-gen-man">
+                                            <input name="gender" type="radio" id="man"><label id="man"
+                                                for="man">Мужской</label>
+                                        </div>
+                                        <div class="regular-gender-gen-girl">
+                                            <input name="gender" type="radio" id="girl"><label id="girl"
+                                                for="girl">Женский</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-mail">
+                                    <label class="mailbox-name" for="mail">Имя ящика</label>
+                                    <div class="regular-mail-main">
+                                        <div class="regular-mail-text">
+                                            <input name="emailName" class="regular-mail-text-email" id="emailName"
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="regular-mail-email" id="emailDomainDropdown">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-password">
+                                    <label class="main-password" for="password">Пароль</label>
+                                    <div class="regular-password-main">
+                                        <div class="regular-password-generate">
+                                            <input type="password" class="regular-password-generate-input"
+                                                name="passwordName" id="passwordInput" placeholder="Password">
+                                            <span class="character-counter" id="characterCounterPass">0</span>
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-password-chek">
+                                    <label class="main-password" for="password">Повторите пароль</label>
+                                    <div class="regular-password-main-chek">
+                                        <div class="regular-password-generate-chek">
+                                            <input type="password" class="regular-password-generate-input-chek"
+                                                name="confirmPasswordInput" id="confirmPasswordInput"
+                                                placeholder="Reset Password">
+                                            <span class="character-counter" id="characterCounterReze">0</span>
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-rezerv">
+                                    <label class="main-rezerv" for="rezerv">Резервная почта</label>
+                                    <div class="regular-rezerv-main">
+                                        <div class="regular-rezerv-generate">
+                                            <input name="rezervName" class="regular-rezerv-generate-input" type="email"
+                                                placeholder="Не обязательно">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-end">
+                                    <div class="regular-end-main">
+                                        <div class="regular-end-generate">
+                                            <button type="button" class="regular-end-button"
+                                                id="validateAndSubmit">Создать</button>
+                                            <button type="button" class="regular-end-button"
+                                                id="showDataBtn">Показать</button>
+                                            <div class="regular-end-text">
+                                                <p>Нажимая «Создать», вы принимаете <a class="reg-href" href="#">Условия
+                                                        использования</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/javaScript/mail-sign.js"></script>
+    <script src="/javaScript/jquery-3.6.3.min.js"></script>
+</body>
+
+</html>

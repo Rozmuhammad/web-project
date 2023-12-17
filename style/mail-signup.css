@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font:
+        13px/16px "Open Sans",
+        sans-serif,
+        "Arimo",
+        sans-serif;
+}
+
+::selection {
+    background-color: grey;
+    color: white;
+}
+
+.container {
+    position: relative;
+}
+.main-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/menutexture.png);
+    background-position: center top;
+    background-size: 100% 175px;
+    background-repeat: repeat-x;
+}
+
+.header-inner {
+    max-width: 1060px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header-inner .logo {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin-top: 5px;
+    background-color: #31363a;
+    text-align: center;
+    border-radius: 10px;
+}
+.header-inner .logo img {
+    padding: 13px 13px 9px 13px;
+}
+
+.index-bg-video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.regular {
+    display: flex;
+}
+
+.regular-inner {
+    width: 420px;
+    height: 375px;
+    border: rgb(226, 224, 224) 1px solid;
+    border-radius: 15px;
+    margin-right: 25px;
+    margin-left: 20px;
+    margin-top: 150px;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.regular-inner-reset {
+    width: 420px;
+    height: 295px;
+    border: rgb(226, 224, 224) 1px solid;
+    border-radius: 15px;
+    margin-right: 25px;
+    margin-left: 20px;
+    margin-top: 150px;
+}
+#myBlock {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    display: none;
+}
+
+#myBlock.show {
+    opacity: 1;
+    display: block;
+}
+.regular-inner-pad {
+    padding: 25px;
+}
+
+.regular-inner-pad {
+    font-size: 12px;
+    color: rgb(167, 167, 167);
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+}
+
+.rez-pass a {
+    text-decoration: none;
+    color: rgb(143, 107, 107);
+}
+.regular-new-text a {
+    text-decoration: none;
+    margin-left: 100px;
+    color: rgb(143, 107, 107);
+}
+.regular-rezerv-label {
+    display: flex;
+    justify-content: space-between;
+    width: 365px;
+}
+.regular-password {
+    margin-top: 30px;
+}
+
+.regular-password-generate-input {
+    width: 362.5px;
+    border-radius: 5px 0 5px 0;
+    color: rgb(186, 186, 186);
+    height: 32px;
+    border: 0.5px rgb(215, 215, 215) solid;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.regular-rezerv {
+    margin: 20px 0 15px 0;
+}
+.regular-rezerv-generate-input {
+    width: 362.5px;
+    border-radius: 0 5px 0 5px;
+    color: rgb(186, 186, 186);
+    height: 32px;
+    border: 0.5px rgb(215, 215, 215) solid;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.regular-end-button {
+    width: 369px;
+    height: 40px;
+    border-radius: 5px 0 5px 0;
+    background-color: #5e5e5e;
+    color: white;
+    border: unset;
+    margin-top: 20px;
+}
+.reg-href {
+    text-decoration: unset;
+    color: rgb(143, 107, 107);
+}

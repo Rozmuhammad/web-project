@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/reset-inProduction/reset-mail.css">
+    <title>Document-reset</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-main">
+            <div class="container-inner">
+                <h1>Установка нового пароля</h1>
+                <input type="hidden" name="email">
+                <div class="pass">
+                    <div class="new-pass">
+                        <label for="firstname">Имя пользователя</label>
+                        <input type="text" name="firstname" class="password">
+                    </div>
+                    <div class="pass-re">
+                        <label for="Password">Пароль</label>
+                        <input type="password" name="oldPassword" class="rest-password">
+                    </div>
+                </div>
+                <div class="new-pass-re">
+                    <label for="newPassword">Новый пароль</label>
+                    <input type="password" name="newPassword" class="rest-password">
+                </div>
+                <div class="buuton-reset">
+                    <button class="button-res" type="submit" name="reset">Установить пароль</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
