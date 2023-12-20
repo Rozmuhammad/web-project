@@ -9,7 +9,7 @@ if (isset($_POST['go-in'])) {
     $password = $_POST['lp'];
 
     if (!$email || !$password) {
-        header('Location: error-mailPassword.html');
+        header('Location: /project-work-1/web-project/html/error-mailPassword.html');
         exit;
     }
 
@@ -27,10 +27,10 @@ if (isset($_POST['go-in'])) {
         $_SESSION['reserve'] = $user['reserve_email'];
         $_SESSION['password'] = $user['password'];
 
-        header('Location: successful.html');
+        header('Location: /project-work-1/web-project/html/successful.html');
         exit;
     } else {
-        header('Location: error-mailPassword.html');
+        header('Location: /project-work-1/web-project/html/error-mailPassword.html');
         exit;
     }
 }

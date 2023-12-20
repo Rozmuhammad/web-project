@@ -131,6 +131,15 @@ main {
   text-align: center;
   margin-top: 35px;
   color: rgb(239, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-user img {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
 }
 
 .first-block {

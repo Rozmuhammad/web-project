@@ -26,7 +26,7 @@ $sql = "INSERT INTO users (first_name, last_name, birth_date, gender, email, pas
         VALUES ('$first_name', '$last_name', '$birth_date', '$gender', '$email', '$password', '$reserve_email')";
 
 if ($conn->query($sql) === TRUE) {
-    header('Location: successful-reg.html');
+    header('Location: /project-work-1/web-project/html/successful-reg.html');
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

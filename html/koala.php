@@ -1,6 +1,6 @@
-<!-- <?php
+<?php
 session_start();
-?> -->
+?>
 
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/koala.css">
+    <link rel="stylesheet" href="/project-work-1/web-project/style/koala.css">
     <link rel="icon" href="https://img.imgsmail.ru/static.promo/logo/logo.svg">
     <title>Koala</title>
 </head>
@@ -32,7 +32,7 @@ session_start();
     <div class="index-bg-video">
         <div class="video-bg">
             <video loop autoplay muted>
-                <source src="/video/space.mp4" type="video/mp4">
+                <source src="/project-work-1/web-project/video/space.mp4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -40,6 +40,15 @@ session_start();
         <div id="main-content">
             <div class="main-user">
                 <h1>USER DATA</h1>
+                <a href="#">
+                    <img src="/project-work-1/web-project/image/insta.webp" alt="">
+                </a>
+                <a href="#">
+                    <img src="/project-work-1/web-project/image/xSocial.webp" alt="">
+                </a>
+                <a href="#">
+                    <img src="/project-work-1/web-project/image/teleg.webp" alt="">
+                </a>
             </div>
             <div class="first-block">
                 <div class="firstname">
@@ -83,12 +92,12 @@ session_start();
             </div>
             <div class="main-arrow">
                 <div class="inner-arrow">
-                    <a href="space-map.html"><img src="/image/grey-arrow.png" alt=""></a>
+                    <a href="space-map.html"><img src="/project-work-1/web-project/image/grey-arrow.png" alt=""></a>
                 </div>
             </div>
         </div>
     </main>
-    <script src="/javaScript/koala.js"></script>
+    <script src="/project-work-1/web-project/javaScript/koala.js"></script>
 </body>
 
 </html>
