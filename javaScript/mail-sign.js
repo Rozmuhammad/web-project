@@ -200,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // количество символов
     var passwordInput = document.getElementById('passwordInput');
     var characterCounterPass = document.getElementById('characterCounterPass');
+
     var confirmPasswordInput = document.getElementById('confirmPasswordInput');
     var characterCounterReze = document.getElementById('characterCounterReze');
 
@@ -234,7 +235,6 @@ function validateForm() {
     var confirmPasswordInput = document.getElementsByName("confirmPasswordInput")[0].value;
     var rezervName = document.getElementsByName("rezervName")[0].value;
 
-    // Примеры проверок
     if (firstName === "" || !/^[A-Za-zА-Яа-я]+$/.test(firstName)) {
         alert("Введите корректное имя.");
         return false;
@@ -255,7 +255,7 @@ function validateForm() {
         return false;
     }
 
-    if (emailName === "" || !/^[A-Za-z0-9]+$/.test(emailName)) {
+    if (emailName === "" || !/^[A-Za-z0-9_.]+$/.test(emailName)) {
         alert("Введите корректное имя ящика.");
         return false;
     }
@@ -266,7 +266,7 @@ function validateForm() {
     }
 
     if (passwordName.length < 8 || !/[A-Za-z0-9!@#$%^&*()_+]+/.test(passwordName)) {
-        alert("Пароль должен содержать минимум 8 символов, включая буквы, цифры и символы.");
+        alert("Пароль должен содержать минимум 8 символов");
         return false;
     }
 
@@ -275,7 +275,7 @@ function validateForm() {
         return false;
     }
 
-    if (rezervName === "" || !/^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z]+$/.test(rezervName)) {
+    if (rezervName === "" || !/^[A-Za-z0-9_.]+@[A-Za-z0-9]+\.[A-Za-z]+$/.test(rezervName)) {
         alert("Введите корректную резервную почту.");
         return false;
     }

@@ -41,31 +41,35 @@ body {
 
 .header-inner {
     max-width: 1060px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
-.header-inner .logo {
-    display: block;
+.logo {
+    display: flex;
     width: auto;
     height: 100%;
     margin-top: 5px;
-    background-color: #31363a;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 10px;
+}
+.logo img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 992px) {
     .header-inner .logo {
         margin-left: 90px;
     }
-}
-
-.header-inner .logo img {
-    padding: 13px 13px 9px 13px;
 }
 
 .container {

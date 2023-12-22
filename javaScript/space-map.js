@@ -39,3 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+const bodyHtml = document.querySelector('.main-content');
+
+
+function transition() {
+    bodyHtml.style.transition = '1.4s';
+    bodyHtml.style.opacity = '0';
+    setTimeout(() => {
+        window.location.href = 'koala.php';
+    }, 1400);
+}

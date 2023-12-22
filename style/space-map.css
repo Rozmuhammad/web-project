@@ -121,3 +121,26 @@ body {
 .planet-link:hover {
     color: #ffa500; /* цвет при наведении, можно заменить на свой выбор */
 }
+
+.main-arrow {
+    position: absolute;
+    top: 45vh;
+    left: -25vh;
+}
+.inner-arrow img {
+    width: 15vh;
+    border-radius: 50px;
+    transform: rotate(180deg);
+}
+
+.inner-arrow a {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.inner-arrow a:hover {
+    transform: scale(1.2);
+}

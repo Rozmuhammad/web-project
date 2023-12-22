@@ -36,19 +36,23 @@ body {
     justify-content: space-between;
     position: relative;
 }
-.header-inner .logo {
-    display: block;
+.logo {
+    display: flex;
     width: auto;
     height: 100%;
-    margin-top: 5px;
-    background-color: #31363a;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 10px;
 }
-.header-inner .logo img {
-    padding: 13px 13px 9px 13px;
+.logo img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
 }
-
 .index-bg-video {
     width: 100%;
     height: 100%;

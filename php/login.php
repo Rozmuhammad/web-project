@@ -19,7 +19,6 @@ if (isset($_POST['go-in'])) {
     $user = $request->fetch(PDO::FETCH_ASSOC);
 
     if ($user) {
-        $_SESSION['le'] = $email;
         $_SESSION['firstname'] = $user['first_name'];
         $_SESSION['lastname'] = $user['last_name'];
         $_SESSION['birthday'] = $user['birth_date'];

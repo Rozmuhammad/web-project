@@ -11,15 +11,18 @@ function togglePasswordVisibility() {
     }
 }
 
-imagesLoaded(document.querySelectorAll('img'), () => {
+document.addEventListener('DOMContentLoaded', function () {
+    const bodyHtml = document.querySelector('.transition');
+    const bodyHtml1 = document.querySelector('.transition-1');
 
-    document.body.classList.remove('loading');
 
-    const el = document.getElementById('slider');
-    const imgs = Array.from(el.querySelectorAll('img'));
-    new displacementSlider({
-        parent: el,
-        images: imgs
-    });
+    function transition() {
+        bodyHtml.style.transition = '1.5s';
+        bodyHtml.style.opacity = '1';
+        bodyHtml1.style.transition = '1.5s';
+        bodyHtml1.style.opacity = '1';
+    }
 
+    window.onload = transition;
 });
+

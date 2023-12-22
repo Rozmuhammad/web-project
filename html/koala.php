@@ -12,14 +12,23 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/project-work-1/web-project/style/koala.css">
-    <link rel="icon" href="https://img.imgsmail.ru/static.promo/logo/logo.svg">
+    <link rel="icon" href="/project-work-1/web-project/image/space-Logo.png">
     <title>Koala</title>
 </head>
 
 <body class="loading">
-    <header>
+    <header class="transition">
         <div class="inner">
-            <div class="logo"><img src="https://img.imgsmail.ru/static.promo/logo/logo.svg"></div>
+            <div class="logo"><a href="https://www.instagram.com" target="_blank">
+                    <img src="/project-work-1/web-project/image/insta.webp" alt="">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="/project-work-1/web-project/image/xSocial.webp" alt="">
+                </a>
+                <a href="https://web.telegram.org/a/" target="_blank">
+                    <img src="/project-work-1/web-project/image/teleg.webp" alt="">
+                </a>
+            </div>
             <div class="burger"></div>
             <nav>
                 <a href="mail-sign.html">mail-sign</a>
@@ -36,19 +45,11 @@ session_start();
             </video>
         </div>
     </div>
-    <main>
+    <main class="transition-1">
         <div id="main-content">
             <div class="main-user">
                 <h1>USER DATA</h1>
-                <a href="#">
-                    <img src="/project-work-1/web-project/image/insta.webp" alt="">
-                </a>
-                <a href="#">
-                    <img src="/project-work-1/web-project/image/xSocial.webp" alt="">
-                </a>
-                <a href="#">
-                    <img src="/project-work-1/web-project/image/teleg.webp" alt="">
-                </a>
+                <img src="/project-work-1/web-project/image/moon.png" alt="">
             </div>
             <div class="first-block">
                 <div class="firstname">

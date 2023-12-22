@@ -8,11 +8,19 @@ body {
   margin: 0;
   background-color: #23272a;
   overflow: hidden;
+  user-select: none;
 }
 
 ::selection {
   background-color: grey;
   color: white;
+}
+
+.transition {
+  opacity: 0;
+}
+.transition-1 {
+  opacity: 0;
 }
 
 .index-bg-video {
@@ -37,7 +45,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 10;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/menutexture.png);
+  background-image: url(/project-work-1/web-project/image/menutexture.png);
   background-position: center top;
   background-size: 100% 250px;
   background-repeat: repeat-x;
@@ -52,17 +60,21 @@ header .inner {
   position: relative;
 }
 header .logo {
-  display: block;
+  display: flex;
   width: auto;
   height: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: #31363a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   border-radius: 10px;
 }
 header .logo img {
-  padding: 13px 13px 6px 13px;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 header nav {
   display: none;
